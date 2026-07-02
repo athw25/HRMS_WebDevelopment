@@ -1,0 +1,468 @@
+﻿TÀI LIỆU QUY CHUẨN THIẾT KẾ VÀ PHÁT TRIỂN DỰ ÁN
+PROJECT DESIGN STANDARDS & DEVELOPMENT CONVENTIONS
+Dự án: Website Quản Lý Nhân Sự (HRMS)
+________________
+
+
+1. MỤC ĐÍCH
+Tài liệu này quy định các nguyên tắc thiết kế, phát triển và tích hợp hệ thống nhằm đảm bảo tính thống nhất trong toàn bộ dự án.
+Tất cả thành viên tham gia dự án phải tuân thủ các quy định trong tài liệu này.
+Mục tiêu:
+* Đảm bảo tính đồng nhất của hệ thống.
+* Hạn chế xung đột khi tích hợp.
+* Giảm lỗi phát sinh do khác biệt cách triển khai.
+* Nâng cao chất lượng sản phẩm.
+* Hỗ trợ bảo trì và mở rộng trong tương lai.
+________________
+
+
+2. NGUYÊN TẮC QUẢN LÝ THAY ĐỔI
+2.1. Không tự ý thay đổi thiết kế
+Không thành viên nào được tự ý:
+* Thêm bảng dữ liệu mới.
+* Xóa bảng dữ liệu.
+* Đổi tên bảng.
+* Đổi tên cột.
+* Đổi tên module.
+* Thay đổi Use Case.
+* Thay đổi Sitemap.
+* Thay đổi giao diện dùng chung.
+Mọi thay đổi phải được:
+1. Thảo luận nhóm.
+2. Cập nhật tài liệu.
+3. Được nhóm trưởng phê duyệt.
+________________
+
+
+2.2. Tài liệu gốc của dự án
+Toàn bộ nhóm phải tuân theo các tài liệu sau:
+1. Project Overview
+2. SRS
+3. Use Case Diagram
+4. ERD
+5. Database Design
+6. UI Design Specification
+7. Tài liệu này
+Nếu có xung đột, tài liệu mới nhất đã được phê duyệt sẽ được ưu tiên.
+________________
+
+
+3. QUY CHUẨN KIẾN TRÚC HỆ THỐNG
+3.1. Mô hình phát triển
+Dự án sử dụng:
+PHP + MySQL
+MVC đơn giản
+
+
+Tách biệt:
+Presentation Layer
+Business Logic Layer
+Data Layer
+
+
+________________
+
+
+3.2. Cấu trúc thư mục
+hrms/
+
+
+assets/
+├── css
+├── js
+├── images
+
+
+uploads/
+├── employees
+
+
+config/
+
+
+includes/
+
+
+modules/
+├── users
+├── employees
+├── departments
+├── positions
+├── attendance
+├── leave
+├── salary
+├── reward
+
+
+layouts/
+
+
+database/
+
+
+Không được tạo cấu trúc thư mục riêng theo ý cá nhân.
+________________
+
+
+4. QUY CHUẨN DATABASE
+4.1. Quy tắc đặt tên bảng
+Sử dụng:
+snake_case
+
+
+Ví dụ:
+users
+roles
+employees
+departments
+positions
+attendance
+leave_requests
+salaries
+reward_discipline
+
+
+Không sử dụng:
+Users
+tblUsers
+EmployeeTable
+
+
+________________
+
+
+4.2. Quy tắc đặt tên cột
+Sử dụng:
+snake_case
+
+
+Ví dụ:
+full_name
+phone_number
+basic_salary
+created_at
+
+
+________________
+
+
+4.3. Khóa chính
+Tất cả bảng:
+id
+
+
+Ví dụ:
+users.id
+employees.id
+departments.id
+
+
+________________
+
+
+4.4. Khóa ngoại
+Định dạng:
+table_name_id
+
+
+Ví dụ:
+role_id
+department_id
+position_id
+employee_id
+
+
+________________
+
+
+4.5. Cột thời gian
+Tất cả bảng bắt buộc có:
+created_at DATETIME
+updated_at DATETIME
+
+
+________________
+
+
+5. QUY CHUẨN LẬP TRÌNH PHP
+5.1. Quy tắc đặt tên file
+Định dạng:
+lowercase-with-dash
+
+
+Ví dụ:
+employee-list.php
+employee-create.php
+employee-edit.php
+employee-delete.php
+
+
+________________
+
+
+5.2. Quy tắc đặt tên biến
+Sử dụng:
+camelCase
+
+
+Ví dụ:
+$employeeName
+$departmentId
+$totalSalary
+
+
+________________
+
+
+5.3. Quy tắc đặt tên hàm
+Định dạng:
+verb + object
+
+
+Ví dụ:
+getEmployee()
+createEmployee()
+updateDepartment()
+deletePosition()
+
+
+________________
+
+
+5.4. Quy tắc Comment
+Bắt buộc comment:
+* Hàm xử lý chính.
+* Truy vấn phức tạp.
+* Logic nghiệp vụ.
+Ví dụ:
+// Calculate total salary
+
+
+________________
+
+
+6. QUY CHUẨN GIAO DIỆN
+Áp dụng theo tài liệu:
+UI Design Specification HRMS
+________________
+
+
+6.1. Font chữ
+Bắt buộc:
+Be Vietnam Pro
+
+
+________________
+
+
+6.2. Hệ màu
+Theo tài liệu UI Design Specification.
+Không được tự ý sử dụng màu khác cho các thành phần chính.
+________________
+
+
+6.3. Layout
+Tất cả màn hình phải sử dụng:
+Header
+Sidebar
+Content Area
+Footer
+
+
+________________
+
+
+6.4. Responsive
+Bắt buộc hỗ trợ:
+Desktop
+Tablet
+Mobile
+
+
+________________
+
+
+7. QUY CHUẨN COMPONENT
+Button
+Primary
+Add
+Save
+Submit
+
+
+________________
+
+
+Secondary
+Back
+Cancel
+
+
+________________
+
+
+Success
+Approve
+Confirm
+
+
+________________
+
+
+Danger
+Delete
+Reject
+
+
+________________
+
+
+Form
+Quy định:
+* Label nằm trên Input.
+* Trường bắt buộc có dấu (*).
+* Validation hiển thị bên dưới.
+________________
+
+
+Data Table
+Bắt buộc có:
+Search
+Filter
+Table
+Pagination
+
+
+________________
+
+
+8. QUY CHUẨN PHÂN QUYỀN
+Admin
+Toàn quyền.
+________________
+
+
+Manager
+Được phép:
+* Xem nhân viên phòng ban.
+* Duyệt nghỉ phép.
+* Theo dõi chấm công.
+* Xem báo cáo phòng ban.
+________________
+
+
+Employee
+Chỉ thao tác dữ liệu cá nhân.
+________________
+
+
+9. QUY CHUẨN GIT VÀ SOURCE CODE
+Branch
+Không commit trực tiếp lên:
+main
+
+
+________________
+
+
+Sử dụng:
+feature/auth
+feature/employee
+feature/attendance
+feature/salary
+feature/dashboard
+
+
+________________
+
+
+Commit Message
+Định dạng:
+feat: add employee CRUD
+
+
+fix: attendance validation
+
+
+update: dashboard statistics
+
+
+________________
+
+
+Merge
+Trước khi merge:
+* Chạy không lỗi.
+* Không phá vỡ module khác.
+* Được người phụ trách tích hợp kiểm tra.
+________________
+
+
+10. QUY CHUẨN DỮ LIỆU
+Giới tính
+Male
+Female
+Other
+
+
+________________
+
+
+Trạng thái nghỉ phép
+Pending
+Approved
+Rejected
+
+
+________________
+
+
+Trạng thái chấm công
+Present
+Late
+Absent
+Leave
+
+
+________________
+
+
+Loại quyết định
+Reward
+Discipline
+
+
+________________
+
+
+11. QUY CHUẨN KIỂM THỬ
+Mọi module trước khi bàn giao phải kiểm tra:
+CRUD
+* Create
+* Read
+* Update
+* Delete
+Validation
+* Dữ liệu rỗng
+* Dữ liệu sai định dạng
+* Dữ liệu trùng lặp
+Permission
+* Admin
+* Manager
+* Employee
+________________
+
+
+12. TIÊU CHUẨN NGHIỆM THU MODULE
+Một module được xem là hoàn thành khi:
+* Chức năng hoạt động đúng.
+* Không có lỗi nghiêm trọng.
+* Kết nối database thành công.
+* Tuân thủ UI Design Specification.
+* Tuân thủ Database Design.
+* Tuân thủ tài liệu này.
+________________
+
+
+KẾT LUẬN
+Tài liệu Quy chuẩn Thiết kế và Phát triển Dự án là tiêu chuẩn bắt buộc đối với tất cả thành viên tham gia dự án Website Quản Lý Nhân Sự (HRMS). Mọi hoạt động thiết kế, lập trình, kiểm thử và tích hợp hệ thống đều phải tuân thủ các nguyên tắc được quy định nhằm đảm bảo tính thống nhất, chất lượng và khả năng bảo trì của sản phẩm.
