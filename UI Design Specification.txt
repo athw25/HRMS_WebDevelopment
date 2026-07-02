@@ -1,0 +1,371 @@
+﻿TÀI LIỆU ĐẶC TẢ THIẾT KẾ GIAO DIỆN HỆ THỐNG (UI Design Specification)
+Dự án: Website Quản Lý Nhân Sự (HRMS)
+________________
+
+
+1. MỤC ĐÍCH
+Tài liệu này mô tả các nguyên tắc thiết kế giao diện người dùng (UI Design Specification) của hệ thống HRMS nhằm đảm bảo tính thống nhất trong quá trình thiết kế và phát triển.
+Các thành viên trong nhóm phải tuân thủ tài liệu này khi xây dựng giao diện để tránh sự khác biệt về bố cục, màu sắc, trải nghiệm người dùng và phong cách thiết kế giữa các module.
+________________
+
+
+2. ĐỊNH HƯỚNG THIẾT KẾ
+2.1. Phong cách thiết kế
+Hệ thống áp dụng phong cách:
+Corporate HR Dashboard + Modern Material Design
+Kết hợp giữa:
+* Thiết kế doanh nghiệp chuyên nghiệp.
+* Dashboard quản trị hiện đại.
+* Material Design tối giản.
+* Trải nghiệm người dùng thân thiện.
+* Khả năng mở rộng và bảo trì cao.
+Mục tiêu:
+* Dễ sử dụng.
+* Dễ đọc dữ liệu.
+* Dễ thao tác.
+* Tăng hiệu quả làm việc.
+* Đảm bảo tính thẩm mỹ hiện đại.
+________________
+
+
+2.2. Đối tượng sử dụng
+* Admin
+* Manager
+* Employee
+Do người dùng thường làm việc trong thời gian dài nên giao diện phải ưu tiên sự rõ ràng, dễ nhìn và giảm mỏi mắt.
+________________
+
+
+3. NGUYÊN TẮC THIẾT KẾ
+3.1. Tính nhất quán
+Toàn bộ hệ thống phải sử dụng:
+* Cùng hệ màu.
+* Cùng font chữ.
+* Cùng kiểu button.
+* Cùng kiểu form.
+* Cùng kiểu bảng dữ liệu.
+* Cùng khoảng cách bố cục.
+Không được thiết kế mỗi module theo một phong cách khác nhau.
+________________
+
+
+3.2. Ưu tiên khả năng sử dụng
+Thứ tự ưu tiên:
+Dễ đọc
+→ Dễ thao tác
+→ Hiệu quả làm việc
+→ Tính thẩm mỹ
+Không hy sinh trải nghiệm người dùng để đổi lấy hiệu ứng phức tạp.
+________________
+
+
+3.3. Responsive
+Giao diện phải hoạt động tốt trên:
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+________________
+
+
+4. HỆ THỐNG MÀU SẮC
+4.1. Light Mode (Mặc định)
+Màu nền
+Background Primary
+#F8FAFC
+Background Secondary
+#FFFFFF
+Màu chính
+Primary
+#2563EB
+Thành công
+Success
+#22C55E
+Cảnh báo
+Warning
+#F59E0B
+Lỗi
+Danger
+#EF4444
+Văn bản
+Primary Text
+#0F172A
+Secondary Text
+#64748B
+________________
+
+
+4.2. Dark Mode
+Nền
+Dark Background
+#0F172A
+Dark Surface
+#1E293B
+Văn bản
+Primary Text
+#F8FAFC
+Secondary Text
+#CBD5E1
+Màu chủ đạo
+#3B82F6
+Dark Mode phải được hỗ trợ trên toàn bộ hệ thống.
+________________
+
+
+5. FONT CHỮ
+Font chính
+Be Vietnam Pro
+Lý do:
+* Hỗ trợ tiếng Việt hoàn chỉnh.
+* Hiển thị đẹp trên mọi thiết bị.
+* Hiện đại và chuyên nghiệp.
+Font dự phòng
+Inter
+Segoe UI
+sans-serif
+________________
+
+
+6. HỆ THỐNG KHOẢNG CÁCH
+Áp dụng chuẩn 8-Point Grid System.
+Các giá trị sử dụng:
+* 8px
+* 16px
+* 24px
+* 32px
+* 40px
+* 48px
+* 64px
+Không sử dụng khoảng cách ngẫu nhiên.
+________________
+
+
+7. BỐ CỤC TỔNG THỂ
+7.1. Cấu trúc giao diện
+Header
+Sidebar
+Content Area
+Footer
+________________
+
+
+7.2. Header
+Bao gồm:
+* Toggle Sidebar
+* Notification
+* Dark Mode Switch
+* Avatar người dùng
+* Menu tài khoản
+Header luôn cố định khi cuộn trang.
+________________
+
+
+7.3. Sidebar
+Chứa:
+* Dashboard
+* User Management
+* Employee Management
+* Department Management
+* Position Management
+* Attendance Management
+* Leave Management
+* Salary Management
+* Reward & Discipline
+* Reports
+* Profile
+Sidebar phải hỗ trợ:
+* Active State
+* Hover State
+* Collapse
+________________
+
+
+7.4. Content Area
+Khu vực hiển thị dữ liệu chính.
+Mọi module đều phải sử dụng cùng cấu trúc:
+Page Header
+Toolbar
+Content Card
+Table/Form
+________________
+
+
+8. DASHBOARD
+Thành phần bắt buộc
+Thẻ thống kê
+* Tổng nhân viên
+* Tổng phòng ban
+* Tổng chức vụ
+* Tổng đơn nghỉ phép
+Biểu đồ
+* Thống kê nhân sự
+* Thống kê nghỉ phép
+* Thống kê chấm công
+Hoạt động gần đây
+* Nhân viên mới
+* Đơn nghỉ phép mới
+* Cập nhật gần nhất
+________________
+
+
+9. THIẾT KẾ BẢNG DỮ LIỆU
+Tất cả màn hình quản lý phải sử dụng cùng một chuẩn.
+Thành phần
+* Search Box
+* Filter
+* Add Button
+* Data Table
+* Pagination
+________________
+
+
+Bảng dữ liệu
+Hiển thị:
+* Header rõ ràng
+* Hover Row
+* Zebra Row
+* Sticky Header khi cần
+________________
+
+
+Cột thao tác
+Bao gồm:
+* View
+* Edit
+* Delete
+________________
+
+
+10. THIẾT KẾ FORM
+Thành phần
+* Label
+* Input
+* Select
+* Textarea
+* Validation Message
+________________
+
+
+Quy tắc
+* Label nằm phía trên Input.
+* Thông báo lỗi hiển thị ngay dưới trường nhập liệu.
+* Trường bắt buộc có dấu (*).
+________________
+
+
+11. HỆ THỐNG BUTTON
+Primary Button
+Dùng cho:
+* Save
+* Add
+* Submit
+________________
+
+
+Secondary Button
+Dùng cho:
+* Back
+* Cancel
+________________
+
+
+Success Button
+Dùng cho:
+* Approve
+* Confirm
+________________
+
+
+Danger Button
+Dùng cho:
+* Delete
+* Reject
+________________
+
+
+12. HIỆU ỨNG GIAO DIỆN
+Hiệu ứng được phép sử dụng
+Hover Effect
+Áp dụng cho:
+* Button
+* Card
+* Menu
+* Avatar
+________________
+
+
+Shadow Effect
+Áp dụng cho:
+* Card
+* Modal
+* Dropdown
+________________
+
+
+Smooth Transition
+Toàn bộ hiệu ứng phải sử dụng thời gian chuyển đổi từ:
+0.2s – 0.3s
+________________
+
+
+Toast Notification
+Sử dụng cho:
+* Thêm thành công
+* Cập nhật thành công
+* Xóa thành công
+* Thông báo lỗi
+________________
+
+
+Loading Skeleton
+Áp dụng cho:
+* Dashboard
+* Bảng dữ liệu
+* Báo cáo
+________________
+
+
+13. RESPONSIVE DESIGN
+Desktop
+= 1200px
+Sidebar hiển thị đầy đủ.
+________________
+
+
+Tablet
+768px – 1199px
+Sidebar thu gọn.
+________________
+
+
+Mobile
+< 768px
+Sidebar chuyển thành Drawer.
+Bảng dữ liệu phải hỗ trợ cuộn ngang.
+________________
+
+
+14. DARK MODE
+Hệ thống phải hỗ trợ:
+* Chuyển đổi Light/Dark Mode.
+* Lưu lựa chọn người dùng.
+* Áp dụng cho toàn bộ màn hình.
+* Không làm thay đổi cấu trúc bố cục.
+________________
+
+
+15. TIÊU CHUẨN CHẤT LƯỢNG GIAO DIỆN
+Giao diện hoàn thành khi đáp ứng:
+* Đồng nhất trên toàn hệ thống.
+* Hỗ trợ tiếng Việt đầy đủ.
+* Responsive trên nhiều thiết bị.
+* Hỗ trợ Dark Mode.
+* Hiển thị rõ ràng dữ liệu.
+* Thao tác trực quan.
+* Tốc độ tải nhanh.
+* Trải nghiệm người dùng tốt.
+________________
+
+
+KẾT LUẬN
+Thiết kế giao diện HRMS được xây dựng theo phong cách Corporate HR Dashboard kết hợp Material Design hiện đại nhằm tạo ra một hệ thống quản lý nhân sự chuyên nghiệp, trực quan, dễ sử dụng và phù hợp với môi trường doanh nghiệp thực tế. Tài liệu này là tiêu chuẩn bắt buộc để tất cả thành viên thống nhất trong quá trình thiết kế và phát triển hệ thống.
