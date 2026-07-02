@@ -1,0 +1,321 @@
+﻿WEBSITE QUẢN LÝ NHÂN SỰ (HRMS)
+TÀI LIỆU TỔNG QUAN DỰ ÁN VÀ ĐẶC TẢ YÊU CẦU HỆ THỐNG
+________________
+
+
+1. THÔNG TIN DỰ ÁN
+1.1. Tên dự án
+Website Quản Lý Nhân Sự
+(Tiếng Anh: Human Resource Management System – HRMS)
+________________
+
+
+1.2. Loại dự án
+Website quản lý nội bộ doanh nghiệp.
+________________
+
+
+1.3. Công nghệ sử dụng
+Frontend
+* HTML5
+* CSS3
+* Bootstrap 5
+* JavaScript
+Backend
+* PHP
+Database
+* MySQL
+Công cụ phát triển
+* Visual Studio Code
+* XAMPP
+* phpMyAdmin
+* GitHub
+________________
+
+
+1.4. Mục tiêu dự án
+Xây dựng hệ thống quản lý nhân sự trên nền tảng Web nhằm hỗ trợ doanh nghiệp quản lý tập trung toàn bộ dữ liệu nhân viên và các nghiệp vụ nhân sự.
+Hệ thống cho phép:
+* Quản lý tài khoản người dùng.
+* Quản lý thông tin nhân viên.
+* Quản lý phòng ban.
+* Quản lý chức vụ.
+* Quản lý chấm công.
+* Quản lý nghỉ phép.
+* Quản lý lương.
+* Quản lý thưởng phạt.
+* Thống kê và báo cáo.
+Thông qua hệ thống, doanh nghiệp có thể giảm thời gian xử lý hồ sơ nhân sự, hạn chế sai sót khi quản lý thủ công và nâng cao hiệu quả quản lý.
+________________
+
+
+2. BÀI TOÁN THỰC TẾ
+Trong nhiều doanh nghiệp vừa và nhỏ, thông tin nhân sự thường được lưu trữ bằng Excel hoặc giấy tờ.
+Các khó khăn thường gặp:
+* Dữ liệu phân tán.
+* Khó tìm kiếm thông tin nhân viên.
+* Khó quản lý chấm công.
+* Khó theo dõi nghỉ phép.
+* Khó thống kê lương thưởng.
+* Dễ xảy ra sai sót khi tính toán.
+Do đó cần xây dựng một hệ thống quản lý tập trung giúp số hóa các quy trình nhân sự.
+________________
+
+
+3. PHẠM VI DỰ ÁN
+3.1. Các chức năng sẽ thực hiện
+Nhóm chức năng hệ thống
+* Đăng nhập.
+* Đăng xuất.
+* Đổi mật khẩu.
+* Phân quyền.
+* Quản lý tài khoản.
+Nhóm chức năng nhân sự
+* Quản lý nhân viên.
+* Hồ sơ cá nhân.
+* Upload ảnh nhân viên.
+* Tìm kiếm nhân viên.
+* Lọc nhân viên.
+Nhóm chức năng tổ chức
+* Quản lý phòng ban.
+* Quản lý chức vụ.
+Nhóm chức năng nghiệp vụ
+* Chấm công.
+* Nghỉ phép.
+* Quản lý lương.
+* Quản lý khen thưởng.
+* Quản lý kỷ luật.
+Nhóm chức năng báo cáo
+* Dashboard.
+* Biểu đồ thống kê.
+________________
+
+
+3.2. Các chức năng không nằm trong phạm vi
+Để đảm bảo tiến độ dự án và phù hợp phạm vi môn học, hệ thống không triển khai:
+* Tuyển dụng.
+* Quản lý ứng viên.
+* Đào tạo nhân viên.
+* KPI.
+* Đánh giá hiệu suất.
+* Bảo hiểm xã hội.
+* Thuế thu nhập cá nhân.
+* Chat nội bộ.
+* Hệ thống Email tự động.
+* Chữ ký số.
+________________
+
+
+4. ĐỐI TƯỢNG SỬ DỤNG HỆ THỐNG
+4.1. Admin
+Là người quản trị hệ thống.
+Có quyền:
+* Toàn quyền truy cập.
+* Quản lý tất cả dữ liệu.
+* Xem toàn bộ báo cáo.
+________________
+
+
+4.2. Manager (Trưởng phòng)
+Là người quản lý nhân viên thuộc phòng ban.
+Có quyền:
+* Xem nhân viên thuộc phòng ban.
+* Theo dõi chấm công.
+* Duyệt nghỉ phép.
+* Xem báo cáo phòng ban.
+________________
+
+
+4.3. Employee (Nhân viên)
+Có quyền:
+* Đăng nhập hệ thống.
+* Xem hồ sơ cá nhân.
+* Chấm công.
+* Gửi đơn nghỉ phép.
+* Xem thông tin lương.
+* Xem lịch sử thưởng phạt.
+________________
+
+
+5. MỤC TIÊU NGHIỆP VỤ
+Hệ thống phải hỗ trợ giải quyết các bài toán sau:
+Quản lý nhân viên
+* Lưu trữ hồ sơ nhân viên.
+* Quản lý thông tin liên hệ.
+* Theo dõi quá trình làm việc.
+Quản lý tổ chức
+* Quản lý phòng ban.
+* Quản lý chức vụ.
+Quản lý thời gian làm việc
+* Ghi nhận giờ vào.
+* Ghi nhận giờ ra.
+* Theo dõi tình trạng làm việc.
+Quản lý nghỉ phép
+* Tạo đơn nghỉ phép.
+* Duyệt đơn.
+* Theo dõi lịch sử nghỉ phép.
+Quản lý thu nhập
+* Quản lý lương cơ bản.
+* Quản lý phụ cấp.
+* Quản lý thưởng.
+* Quản lý khấu trừ.
+Hỗ trợ ra quyết định
+* Thống kê nhân sự.
+* Thống kê nghỉ phép.
+* Thống kê lương.
+* Báo cáo tổng quan.
+________________
+
+
+6. MÔ HÌNH PHÂN QUYỀN
+Role 1: Admin
+* Toàn quyền.
+Role 2: Manager
+* Quản lý phòng ban.
+* Duyệt nghỉ phép.
+* Theo dõi nhân viên.
+Role 3: Employee
+* Sử dụng các chức năng cá nhân.
+Nguyên tắc:
+* Người dùng chỉ được truy cập các chức năng thuộc quyền hạn của mình.
+* Không được truy cập trái phép URL của vai trò khác.
+________________
+
+
+7. DANH SÁCH CHỨC NĂNG CHI TIẾT
+Module 1: Authentication
+Chức năng:
+* Đăng nhập.
+* Đăng xuất.
+* Đổi mật khẩu.
+________________
+
+
+Module 2: User Management
+Chức năng:
+* Thêm tài khoản.
+* Sửa tài khoản.
+* Khóa tài khoản.
+* Xóa tài khoản.
+* Gán vai trò.
+________________
+
+
+Module 3: Employee Management
+Chức năng:
+* Thêm nhân viên.
+* Sửa nhân viên.
+* Xóa nhân viên.
+* Xem chi tiết nhân viên.
+* Upload ảnh.
+* Tìm kiếm.
+* Lọc dữ liệu.
+________________
+
+
+Module 4: Department Management
+Chức năng:
+* CRUD phòng ban.
+________________
+
+
+Module 5: Position Management
+Chức năng:
+* CRUD chức vụ.
+________________
+
+
+Module 6: Attendance Management
+Chức năng:
+* Check-in.
+* Check-out.
+* Theo dõi lịch sử chấm công.
+________________
+
+
+Module 7: Leave Management
+Chức năng:
+* Tạo đơn nghỉ phép.
+* Duyệt đơn.
+* Từ chối đơn.
+* Theo dõi lịch sử.
+________________
+
+
+Module 8: Salary Management
+Chức năng:
+* Quản lý lương.
+* Quản lý phụ cấp.
+* Quản lý thưởng.
+* Quản lý khấu trừ.
+* Tính tổng lương.
+________________
+
+
+Module 9: Reward & Discipline
+Chức năng:
+* Thêm quyết định thưởng.
+* Thêm quyết định kỷ luật.
+* Chỉnh sửa.
+* Xóa.
+* Theo dõi lịch sử.
+________________
+
+
+Module 10: Dashboard & Analytics
+Chức năng:
+* Tổng số nhân viên.
+* Tổng số phòng ban.
+* Tổng số chức vụ.
+* Tổng số đơn nghỉ phép.
+* Nhân viên đi làm hôm nay.
+* Biểu đồ thống kê.
+________________
+
+
+8. YÊU CẦU PHI CHỨC NĂNG
+Hiệu năng
+* Thời gian phản hồi dưới 3 giây.
+* Hoạt động ổn định với tối thiểu 50 người dùng.
+Bảo mật
+* Mật khẩu mã hóa.
+* Kiểm soát phiên đăng nhập.
+* Phân quyền truy cập.
+Khả năng sử dụng
+* Giao diện thân thiện.
+* Responsive trên nhiều thiết bị.
+Khả năng mở rộng
+Có thể bổ sung:
+* Tuyển dụng.
+* KPI.
+* Đào tạo.
+* Bảo hiểm.
+Trong các phiên bản tương lai.
+________________
+
+
+9. DỮ LIỆU HỆ THỐNG
+Các thực thể chính:
+* Users
+* Roles
+* Employees
+* Departments
+* Positions
+* Attendance
+* LeaveRequests
+* Salaries
+* RewardDiscipline
+Đây là các thực thể cốt lõi làm cơ sở xây dựng cơ sở dữ liệu cho hệ thống.
+________________
+
+
+10. KẾT QUẢ MONG ĐỢI
+Sau khi hoàn thành, hệ thống phải:
+* Hoạt động trên nền Web.
+* Đăng nhập và phân quyền chính xác.
+* Thực hiện đầy đủ CRUD.
+* Quản lý nhân viên hiệu quả.
+* Hỗ trợ chấm công và nghỉ phép.
+* Quản lý lương và thưởng phạt.
+* Cung cấp Dashboard và thống kê trực quan.
+* Đáp ứng đầy đủ yêu cầu kỹ thuật của môn Lập Trình Web sử dụng PHP và MySQL.
