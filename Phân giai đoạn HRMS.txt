@@ -1,0 +1,363 @@
+﻿KẾ HOẠCH TRIỂN KHAI DỰ ÁN
+WEBSITE QUẢN LÝ NHÂN SỰ (HRMS)
+1. Giới thiệu
+Để đảm bảo dự án được thực hiện một cách có hệ thống, kiểm soát được tiến độ và chất lượng sản phẩm, nhóm áp dụng mô hình phát triển gồm ba giai đoạn chính:
+1. Phân tích và thiết kế hệ thống.
+2. Phát triển hệ thống.
+3. Kiểm thử và hoàn thiện sản phẩm.
+Mô hình này phù hợp với quy mô của đồ án môn học, đồng thời tuân theo quy trình phát triển phần mềm cơ bản gồm các bước: phân tích yêu cầu, thiết kế, triển khai, kiểm thử và bàn giao sản phẩm.
+________________
+
+
+GIAI ĐOẠN 1
+PHÂN TÍCH VÀ THIẾT KẾ HỆ THỐNG
+1.1. Mục tiêu
+Giai đoạn này nhằm xác định phạm vi dự án, các chức năng cần xây dựng và thiết kế tổng thể hệ thống trước khi tiến hành lập trình.
+Các kết quả của giai đoạn này sẽ là cơ sở cho việc xây dựng cơ sở dữ liệu, phát triển chức năng và thiết kế giao diện ở giai đoạn tiếp theo.
+________________
+
+
+1.2. Nội dung thực hiện
+1.2.1. Phân tích yêu cầu và phạm vi dự án
+Nhóm tiến hành xác định mục tiêu của hệ thống, đối tượng sử dụng và các chức năng cần triển khai.
+Đối tượng sử dụng hệ thống
+* Quản trị viên (Admin)
+* Trưởng phòng (Manager)
+* Nhân viên (Employee)
+Chức năng nằm trong phạm vi dự án
+* Đăng nhập / Đăng xuất
+* Đổi mật khẩu
+* Phân quyền
+* Quản lý tài khoản
+* Quản lý nhân viên
+* Hồ sơ cá nhân
+* Quản lý phòng ban
+* Quản lý chức vụ
+* Tìm kiếm và lọc dữ liệu
+* Chấm công
+* Nghỉ phép
+* Quản lý lương
+* Khen thưởng - Kỷ luật
+* Dashboard
+* Biểu đồ thống kê
+Chức năng ngoài phạm vi dự án
+* Tuyển dụng
+* Quản lý ứng viên
+* Đào tạo nhân viên
+* KPI và đánh giá hiệu suất
+* Bảo hiểm xã hội
+* Thuế thu nhập cá nhân
+* Chat nội bộ
+________________
+
+
+1.2.2. Phân tích chức năng hệ thống
+Nhóm tiến hành xác định các chức năng tương ứng với từng vai trò người dùng.
+Admin
+* Quản lý tài khoản
+* Quản lý nhân viên
+* Quản lý phòng ban
+* Quản lý chức vụ
+* Quản lý chấm công
+* Quản lý nghỉ phép
+* Quản lý lương
+* Quản lý khen thưởng - kỷ luật
+* Xem báo cáo và thống kê
+Manager
+* Xem nhân viên thuộc phòng ban
+* Theo dõi chấm công
+* Duyệt đơn nghỉ phép
+* Xem báo cáo phòng ban
+Employee
+* Đăng nhập hệ thống
+* Quản lý hồ sơ cá nhân
+* Chấm công
+* Gửi đơn nghỉ phép
+* Xem lương
+* Xem lịch sử thưởng phạt
+________________
+
+
+1.2.3. Thiết kế Use Case Diagram
+Xây dựng Use Case Diagram tổng thể nhằm mô tả mối quan hệ giữa các tác nhân và các chức năng của hệ thống.
+Mục đích:
+* Xác định các chức năng chính của hệ thống.
+* Xác định quyền truy cập của từng vai trò.
+* Làm cơ sở cho việc phát triển các module chức năng.
+________________
+
+
+1.2.4. Thiết kế cơ sở dữ liệu
+Tiến hành xây dựng mô hình dữ liệu cho hệ thống.
+Các thực thể chính
+* Users
+* Roles
+* Employees
+* Departments
+* Positions
+* Attendance
+* LeaveRequests
+* Salaries
+* RewardDiscipline
+Nội dung thiết kế
+* Xác định thuộc tính của từng bảng.
+* Xác định khóa chính (Primary Key).
+* Xác định khóa ngoại (Foreign Key).
+* Xác định mối quan hệ giữa các bảng.
+* Thiết kế mô hình ERD.
+________________
+
+
+1.2.5. Thiết kế giao diện tổng thể
+Xây dựng sơ đồ điều hướng (Sitemap) và bố cục giao diện cơ bản của hệ thống.
+Các giao diện chính
+* Trang đăng nhập
+* Dashboard
+* Quản lý tài khoản
+* Quản lý nhân viên
+* Quản lý phòng ban
+* Quản lý chức vụ
+* Chấm công
+* Nghỉ phép
+* Quản lý lương
+* Khen thưởng - Kỷ luật
+* Hồ sơ cá nhân
+* Báo cáo và thống kê
+Nội dung thiết kế
+* Sitemap hệ thống
+* Đặc tả các màn hình chính 
+* Danh sách thành phần giao diện
+* Yêu cầu chức năng của từng màn hình 
+________________
+
+
+1.3. Kết quả đầu ra
+Sau khi hoàn thành giai đoạn này, nhóm phải bàn giao các sản phẩm sau:
+1. Tài liệu tổng quan dự án.
+2. Danh sách chức năng và phân quyền hệ thống.
+3. Use Case Diagram.
+4. Mô hình ERD.
+5. Thiết kế cơ sở dữ liệu.
+6. Sitemap hệ thống.
+7. Đặc tả giao diện (UI Specification) 
+________________
+
+
+1.4. Tiêu chí hoàn thành
+Giai đoạn được xem là hoàn thành khi đáp ứng đầy đủ các điều kiện sau:
+* Các chức năng của hệ thống được xác định rõ ràng.
+* Phạm vi dự án được thống nhất.
+* Vai trò và quyền hạn người dùng được xác định đầy đủ.
+* Use Case Diagram được hoàn thiện.
+* ERD được xây dựng và phê duyệt.
+* Cơ sở dữ liệu được chốt.
+* Sitemap và Đặc tả giao diện (UI Specification) được thống nhất.
+* Sẵn sàng chuyển sang Giai đoạn 2 – Phát triển hệ thống.
+________________
+
+
+GIAI ĐOẠN 2
+PHÁT TRIỂN HỆ THỐNG
+2.1. Mục tiêu
+Triển khai toàn bộ hệ thống dựa trên các tài liệu thiết kế đã được phê duyệt ở Giai đoạn 1.
+Đây là giai đoạn chiếm phần lớn thời gian và khối lượng công việc của dự án.
+________________
+
+
+2.2. Nội dung thực hiện
+2.2.1. Xây dựng nền tảng hệ thống
+Triển khai các thành phần cơ bản:
+* Cấu trúc thư mục dự án.
+* Kết nối cơ sở dữ liệu MySQL.
+* Session quản lý đăng nhập.
+* Cơ chế phân quyền.
+* Layout giao diện dùng chung.
+________________
+
+
+2.2.2. Phát triển chức năng xác thực
+Bao gồm:
+* Đăng nhập.
+* Đăng xuất.
+* Đổi mật khẩu.
+Đảm bảo:
+* Xác thực người dùng chính xác.
+* Bảo vệ phiên đăng nhập.
+* Kiểm soát truy cập theo vai trò.
+________________
+
+
+2.2.3. Phát triển các module quản lý
+Quản lý tài khoản
+* Thêm tài khoản.
+* Sửa tài khoản.
+* Xóa tài khoản.
+* Gán quyền.
+Quản lý nhân viên
+* Thêm nhân viên.
+* Chỉnh sửa nhân viên.
+* Xóa nhân viên.
+* Upload ảnh.
+* Tìm kiếm và lọc.
+Quản lý phòng ban
+* CRUD phòng ban.
+Quản lý chức vụ
+* CRUD chức vụ.
+Hồ sơ cá nhân
+* Xem thông tin cá nhân.
+* Cập nhật thông tin cá nhân.
+________________
+
+
+2.2.4. Phát triển các chức năng nghiệp vụ
+Chấm công
+* Check-in.
+* Check-out.
+* Lưu lịch sử chấm công.
+Nghỉ phép
+* Tạo đơn nghỉ phép.
+* Duyệt đơn.
+* Từ chối đơn.
+Quản lý lương
+* Lương cơ bản.
+* Phụ cấp.
+* Thưởng.
+* Khấu trừ.
+* Tính tổng lương.
+Khen thưởng - Kỷ luật
+* Ghi nhận quyết định thưởng.
+* Ghi nhận quyết định kỷ luật.
+* Theo dõi lịch sử.
+________________
+
+
+2.2.5. Phát triển Dashboard và thống kê
+Xây dựng trang tổng quan hệ thống.
+Hiển thị:
+* Tổng số nhân viên.
+* Tổng số phòng ban.
+* Tổng số chức vụ.
+* Số lượng nghỉ phép.
+* Tình trạng chấm công.
+Xây dựng biểu đồ:
+* Nhân viên theo phòng ban.
+* Nhân viên theo chức vụ.
+* Nghỉ phép theo thời gian.
+* Thống kê lương.
+________________
+
+
+2.2.6. Tích hợp hệ thống
+Sau khi hoàn thành từng module, tiến hành:
+* Tích hợp với cơ sở dữ liệu.
+* Tích hợp giao diện.
+* Kiểm tra luồng dữ liệu.
+* Kiểm tra phân quyền.
+________________
+
+
+2.3. Kết quả đầu ra
+* Source code hoàn chỉnh.
+* Database hoàn chỉnh.
+* Toàn bộ chức năng hoạt động.
+* Dashboard hoạt động.
+* Hệ thống có thể sử dụng được.
+________________
+
+
+2.4. Tiêu chí hoàn thành
+* Hoàn thành 100% chức năng theo phạm vi dự án.
+* Không còn chức năng ở trạng thái chưa triển khai.
+* Dữ liệu được lưu trữ chính xác.
+* Phân quyền hoạt động đúng.
+________________
+
+
+GIAI ĐOẠN 3
+KIỂM THỬ VÀ HOÀN THIỆN SẢN PHẨM
+3.1. Mục tiêu
+Đánh giá chất lượng hệ thống, phát hiện lỗi, hoàn thiện sản phẩm và chuẩn bị hồ sơ báo cáo.
+Mục tiêu cuối cùng là tạo ra phiên bản ổn định sẵn sàng trình diễn và bảo vệ trước giảng viên.
+________________
+
+
+3.2. Nội dung thực hiện
+3.2.1. Kiểm thử chức năng
+Tiến hành kiểm tra:
+* Đăng nhập.
+* Đăng xuất.
+* Đổi mật khẩu.
+* Quản lý tài khoản.
+* Quản lý nhân viên.
+* Chấm công.
+* Nghỉ phép.
+* Quản lý lương.
+* Dashboard.
+Đảm bảo tất cả các chức năng CRUD hoạt động chính xác.
+________________
+
+
+3.2.2. Kiểm thử phân quyền
+Kiểm tra quyền truy cập của:
+* Admin.
+* Manager.
+* Employee.
+Đảm bảo người dùng chỉ truy cập được các chức năng được cấp quyền.
+________________
+
+
+3.2.3. Kiểm thử giao diện
+Đánh giá:
+* Tính thân thiện.
+* Tính nhất quán.
+* Khả năng responsive.
+Kiểm tra trên:
+* Desktop.
+* Tablet.
+* Mobile.
+________________
+
+
+3.2.4. Sửa lỗi và tối ưu hệ thống
+Khắc phục:
+* Lỗi chức năng.
+* Lỗi giao diện.
+* Lỗi dữ liệu.
+* Lỗi phân quyền.
+Tối ưu:
+* Truy vấn cơ sở dữ liệu.
+* Hiệu năng hiển thị.
+* Trải nghiệm người dùng.
+________________
+
+
+3.2.5. Chuẩn bị hồ sơ báo cáo
+Hoàn thiện:
+* Slide thuyết trình.
+* Tài liệu báo cáo.
+* Source code.
+* Cơ sở dữ liệu.
+* Kịch bản demo.
+________________
+
+
+3.3. Kết quả đầu ra
+* Hệ thống ổn định.
+* Không còn lỗi nghiêm trọng.
+* Hồ sơ báo cáo hoàn chỉnh.
+* Sẵn sàng bảo vệ đồ án.
+________________
+
+
+3.4. Tiêu chí hoàn thành
+* Toàn bộ chức năng hoạt động đúng yêu cầu.
+* Giao diện hoàn chỉnh.
+* Dữ liệu chính xác.
+* Dashboard hiển thị đúng.
+* Slide và báo cáo hoàn thiện.
+* Hệ thống sẵn sàng trình diễn trước hội đồng đánh giá.
+________________
+
+
+KẾT LUẬN
+Dự án Website Quản lý Nhân sự được triển khai theo mô hình ba giai đoạn gồm Phân tích và Thiết kế, Phát triển Hệ thống, và Kiểm thử - Hoàn thiện Sản phẩm. Mô hình này giúp đảm bảo quá trình phát triển diễn ra có kế hoạch, kiểm soát được tiến độ, đồng thời tạo ra sản phẩm cuối cùng đáp ứng đầy đủ các yêu cầu chức năng và kỹ thuật của môn học Lập trình Web sử dụng PHP và MySQL.
