@@ -1,1 +1,102 @@
 /* CSS skeleton */
+body{
+
+    background:#f5f6fa;
+
+    font-family:Arial,Helvetica,sans-serif;
+
+}
+
+.dashboard-card{
+
+    background:#fff;
+
+    border-radius:10px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.dashboard-card h6{
+
+    color:#666;
+
+    margin-bottom:10px;
+
+}
+
+.dashboard-card h2{
+
+    font-size:32px;
+
+    color:#0d6efd;
+
+}
+
+.dashboard-box{
+
+    background:#fff;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+
+}
+
+canvas{
+
+    width:100%!important;
+
+    height:320px!important;
+
+}
+
+@media(max-width:768px){
+
+.dashboard-card{
+
+margin-bottom:15px;
+
+}
+}
+
+
+/**
+ * =====================================================
+ * MODULE PHÒNG BAN (DEPARTMENTS)
+ * Developer: Nguyễn Quang Minh (TV3)
+ * Dashboard Components
+ * =====================================================
+ */
+
+/* Card Material Design */
+.card-custom {
+    background-color: #ffffff;
+    overflow: hidden;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}

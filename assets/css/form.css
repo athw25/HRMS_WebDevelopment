@@ -1,1 +1,60 @@
-/* CSS skeleton */
+/**
+ * =====================================================
+ * MODULE PHÒNG BAN (DEPARTMENTS)
+ * Form Components
+ * =====================================================
+ */
+
+.fs-7 {
+    font-size: 0.825rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #86b7fe;
+
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+.form-control:disabled {
+    background-color: #f8f9fa;
+
+    border-color: #e9ecef;
+
+    color: #6c757d;
+
+    cursor: not-allowed;
+}
+
+.btn {
+    border-radius: 8px;
+
+    font-weight: 500;
+
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.badge {
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+}
+
+.alert {
+    border-radius: 10px;
+}
+
+.modal-content {
+    border-radius: 12px;
+
+    border: none;
+}
+
+.modal-header,
+.modal-footer {
+    border-color: #f1f3f5;
+}

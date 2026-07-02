@@ -1,1 +1,22 @@
-/* CSS skeleton */
+/**
+ * =====================================================
+ * MODULE PHÒNG BAN (DEPARTMENTS)
+ * Responsive
+ * =====================================================
+ */
+
+@media (max-width: 768px) {
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .card-custom {
+        margin-bottom: 1rem;
+    }
+
+}

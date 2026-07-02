@@ -1,1 +1,145 @@
-/* CSS skeleton */
+/**
+ * CUSTOM CSS - MODULE PHÒNG BAN (DEPARTMENTS)
+ * Triển khai bởi: Nguyễn Quang Minh (TV3)
+ * Phong cách: Corporate HR Dashboard & Material Design
+ */
+
+/* =====================================================
+   1. Card - Material Design
+===================================================== */
+.card-custom {
+    background-color: #ffffff;
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* =====================================================
+   2. Table - Corporate Dashboard
+===================================================== */
+.table th {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.table tbody tr {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.04) !important;
+}
+
+/* =====================================================
+   3. Font Utilities
+===================================================== */
+.fs-7 {
+    font-size: 0.825rem !important;
+}
+
+/* =====================================================
+   4. Pagination
+===================================================== */
+.pagination .page-link {
+    border-radius: 6px !important;
+    margin: 0 2px;
+    color: #495057;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s ease-in-out;
+}
+
+.pagination .page-link:hover {
+    background-color: #e9f3ff;
+    color: #0d6efd;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #ffffff;
+}
+
+/* =====================================================
+   5. Form Controls
+===================================================== */
+.form-control:focus,
+.form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+/* Input bị khóa ở trang Edit */
+.form-control:disabled {
+    background-color: #f8f9fa !important;
+    border-color: #e9ecef !important;
+    color: #6c757d !important;
+    cursor: not-allowed;
+}
+
+/* =====================================================
+   6. Badge
+===================================================== */
+.badge {
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* =====================================================
+   7. Button
+===================================================== */
+.btn {
+    border-radius: 8px !important;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* =====================================================
+   8. Modal
+===================================================== */
+.modal-content {
+    border-radius: 12px;
+    border: none;
+}
+
+.modal-header,
+.modal-footer {
+    border-color: #f1f3f5;
+}
+
+/* =====================================================
+   9. Alert
+===================================================== */
+.alert {
+    border-radius: 10px;
+}
+
+/* =====================================================
+   10. Responsive
+===================================================== */
+@media (max-width: 768px) {
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .card-custom {
+        margin-bottom: 1rem;
+    }
+}
